@@ -12,12 +12,12 @@ function saveToken(token) {
 
 function logout() {
   localStorage.removeItem('lv_token');
-  window.location.href = 'login.html';
+  window.location.href = 'index.html';
 }
 
 function requireAuth() {
   if (!getToken()) {
-    window.location.href = 'login.html';
+    window.location.href = 'index.html';
   }
   renderNavbar();
 }
